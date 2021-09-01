@@ -27,7 +27,7 @@ public class Aplic {
         
         
         
-        do {
+        do { 
             
             System.out.println("************************");
             System.out.println("*****Hello My Friend*****");
