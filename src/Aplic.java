@@ -1,5 +1,6 @@
 import fatec.poo.model.ContaCorrente;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 
 public class Aplic {
@@ -14,6 +15,7 @@ public class Aplic {
         opcao = 0;
         
         Scanner entrada = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#,##0.00");
         
         System.out.println("Digite o numero da conta:");
         numConta = entrada.nextInt();
@@ -50,7 +52,7 @@ public class Aplic {
                     break;
 
                 case 2:/*Exibir saldo*/
-                    System.out.println(objCCorrente.getSaldo());
+                    System.out.println(df.format(objCCorrente.getSaldo()));
                     break;
 
                 case 3: /*Sacar Dinheiro*/
